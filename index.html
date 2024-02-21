@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+    <title>Concept</title>
+</head>
+<body>
+    <!-- menu container -->
+    <div class="menu-container flex justify-around items-center bg-slate-400 h-16">
+        <h3 class="font-bold">Budget <span class="price-color" id="budget">2500</span>$</h3>
+        <h3>Cart <span class="price-color" id="cart">0</span></h3>
+        <h3>Left <span class="price-color" id="left">6</span></h3>
+    </div>
+
+    <!-- main container -->
+    <div class="flex justify-evenly mt-8 items-center text-center">
+        <div class="players-container grid grid-cols-5 gap-2 rounded-md">
+            <div class="players-btn border-2 p-7 space-y-2">
+                <h5>Tamim Iqbal</h5>
+                <h5>Price <span>300</span>$</h5>
+                <h5>Category <span>Bat</span></h5>
+                <button class="btn all-btn ">Add To Cart</button>
+            </div>
+            <div class="players-btn border-2 p-7 space-y-2">
+                <h5>Sakib Al Hasan</h5>
+                <h5>Price <span>300</span>$</h5>
+                <h5>Category <span>All Rounder</span></h5>
+                <button class="btn all-btn ">Add To Cart</button>
+            </div>
+            <div class="players-btn border-2 p-7 space-y-2">
+                <h5>Mushfiq</h5>
+                <h5>Price <span>200</span>$</h5>
+                <h5>Category <span>Bat</span></h5>
+                <button class="btn all-btn ">Add To Cart</button>
+            </div>
+            <div class="players-btn border-2 p-7 space-y-2">
+                <h5>Liton Das</h5>
+                <h5>Price <span>300</span>$</h5>
+                <h5>Category <span>Bat</span></h5>
+                <button class="btn all-btn ">Add To Cart</button>
+            </div>
+            <div class="players-btn border-2 p-7 space-y-2">
+                <h5>Shanto</h5>
+                <h5>Price <span>400</span>$</h5>
+                <h5>Category <span>Bat</span></h5>
+                <button class="btn all-btn ">Add To Cart</button>
+            </div>
+            <div class="players-btn border-2 p-7 space-y-2">
+                <h5>Mustafiz</h5>
+                <h5>Price <span>400</span>$</h5>
+                <h5>Category <span>Ball</span></h5>
+                <button class="btn all-btn ">Add To Cart</button>
+            </div>
+            <div class="players-btn border-2 p-7 space-y-2">
+                <h5>Taskin</h5>
+                <h5>Price <span>400</span>$</h5>
+                <h5>Category <span>Bat</span></h5>
+                <button class="btn all-btn ">Add To Cart</button>
+            </div>
+            <div class="players-btn border-2 p-7 space-y-2">
+                <h5>Shoriful</h5>
+                <h5>Price <span>300</span>$</h5>
+                <h5>Category <span>Ball</span></h5>
+                <button class="btn all-btn ">Add To Cart</button>
+            </div>
+            <div class="players-btn border-2 p-7 space-y-2">
+                <h5>Touhid Ridoy</h5>
+                <h5>Price <span>300</span>$</h5>
+                <h5>Category <span>Bat</span></h5>
+                <button class="btn all-btn ">Add To Cart</button>
+            </div>
+            <div class="players-btn border-2 p-7 space-y-2">
+                <h5>Mehedi Miraj</h5>
+                <h5>Price <span>300</span>$</h5>
+                <h5>Category <span>All-rounder</span></h5>
+                <button class="btn all-btn ">Add To Cart</button>
+            </div>
+            <div class="players-btn border-2 p-7 space-y-2">
+                <h5>Sommo Sorkar</h5>
+                <h5>Price <span>200</span>$</h5>
+                <h5>Category <span>Bat</span></h5>
+                <button class="btn all-btn ">Add To Cart</button>
+            </div>
+            <div class="players-btn border-2 p-7 space-y-2">
+                <h5>Salauddin</h5>
+                <h5>Price <span>500</span>$</h5>
+                <h5>Category <span>Couch</span></h5>
+                <button class="btn all-btn ">Add To Cart</button>
+            </div>
+    
+    
+        </div>
+        <div class="cart-container border-2 p-10 border-black rounded-md space-y-5 flex flex-col justify-center items-center">
+           <h2>My Cart</h2>
+           <hr>
+           <div class="selected-players flex justify-between gap-20">
+            <div class="name">Name </div>
+            <div class="price">Price</div>
+            <div class="category">Category</div>
+           </div>
+           <div class="selected-players " id="selected-players-container"></div>
+           <hr>
+           <h3 class="padding">Total cost <span id="total-cost">0</span>$</h3>
+           <hr>
+           <div class="coupon-code">
+            <input class=" border-2 p-2 m-2 rounded-full" id="coupon-code" type="text" placeholder="coupon-code">
+            <button class="btn bg-gray-600 rounded-full text-white" id=" apply-btn">Apply</button>
+            <hr>
+            <h3 class="padding">Grand Total <span id="grand-total">0</span>$</h3>
+           </div>
+        </div>
+    </div>
+
+    <!-- javascript -->
+    <script src="app.js"></script>
+</body>
+</html>
